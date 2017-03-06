@@ -38,6 +38,18 @@ def useful_method
 end
 ```
 
+The following code is not coming out as expected. Oh bugger. Let's use pry to dig into what is causing the problem! 
+
+``` Ruby
+def add_5_years(age)
+  5.times do
+    age + 1
+  end
+end
+
+puts add_5_years(50)
+```
+
 ### What else can Pry do!?
 I'm so glad you asked!
 
