@@ -6,7 +6,11 @@ Remember way back when we were showing off new gems we discovered from a very !?
 
 
 ### What is Pry
+There are two main uses for PRY, to use in place of IRB and to step through our code while running a program in terminal.
+
 Pry is another Ruby REPL, much like IRB, with some added functionality.
+
+When Instead of using a bunch of 'puts' commands in a program, we can use PRY to pause our code and 
 
 
 
@@ -47,7 +51,7 @@ I'm so glad you asked!
 Pry also have handy commands like:
 - cd
 - ls
-- 
+-
 
 
 Dig into [Pry's documentation](http://pryrepl.org/) (with screencasts) to learn even more!
