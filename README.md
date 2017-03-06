@@ -10,7 +10,7 @@ There are two main uses for PRY, to use in place of IRB and to step through our 
 
 Pry is another Ruby REPL, much like IRB, with some added functionality.
 
-When Instead of using a bunch of 'puts' commands in a program, we can use PRY to pause our code and 
+When Instead of using a bunch of 'puts' commands in a program, we can use PRY to pause our code and
 
 
 
@@ -26,7 +26,7 @@ When Instead of using a bunch of 'puts' commands in a program, we can use PRY to
 
 Because programs get read from top to bottom, any code that comes after a binding.pry command will not be read. Run the code in the exercise below, as you would normally (`` ruby exercise.rb ``). To exit, type 'exit' and push enter.
 
-`` Ruby
+``` Ruby
 require 'pry'
 def useful_method
     first_variable = "Something useful"
@@ -36,22 +36,20 @@ def useful_method
     puts another_variable
     first_variable = "Time for change"
 end
-``
-
-Let's have a look at how Pry is also a great tool for stepping through an enumerable.
-`` Ruby
-require 'pry'
-
-``
-
+```
 
 ### What else can Pry do!?
 I'm so glad you asked!
 
-Pry also have handy commands like:
-- cd
-- ls
--
+Pry also have the following handy commands that let you see what objects are currently available in your program to focus on and interact directly with.
+
+- ``ls``,  shows you the local variables defined in the current context, and any public methods or instance variables defined on the current object.
+- ``cd``, command is used to move into a new object (or scope) inside a Pry session. When inside the new scope it becomes the self for the session and all commands and methods will operate on this new self.
+
+
+### Try it out!
+Open your scrabble or Bank Account project and inspect functionality of your code using PRY! Practice using the ls and cd commands. 
+
 
 
 Dig into [Pry's documentation](http://pryrepl.org/) (with screencasts) to learn even more!
