@@ -38,6 +38,18 @@ def useful_method
 end
 ```
 
+The following code is not coming out as expected. Oh bugger. Let's use pry to dig into what is causing the problem! 
+
+``` Ruby
+def add_5_years(age)
+  5.times do
+    age + 1
+  end
+end
+
+puts add_5_years(50)
+```
+
 ### What else can Pry do!?
 I'm so glad you asked!
 
@@ -48,8 +60,10 @@ Pry also have the following handy commands that let you see what objects are cur
 
 
 ### Try it out!
-Open your scrabble or Bank Account project and inspect functionality of your code using PRY! Practice using the ls and cd commands. 
+Open your scrabble or Bank Account project and inspect functionality of your code using PRY! Practice using the ls and cd commands.
 
 
 
 Dig into [Pry's documentation](http://pryrepl.org/) (with screencasts) to learn even more!
+
+Here's a handy list with more [Pry commands](https://github.com/pry/pry/wiki/State-navigation#Ls)!
